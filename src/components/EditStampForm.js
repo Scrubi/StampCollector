@@ -14,9 +14,9 @@ export default class EditStampForm extends Component {
                 stampId:(this.props.stamp != null) ? this.props.stamp.id : "",
                 stampName:(this.props.stamp != null) ? this.props.stamp.name : "",
                 stampPrice:(this.props.stamp != null) ? this.props.stamp.price : "",
-                stampYearPublished:(this.props.stamp != null) ? this.props.stamp.yearPublished:"",
-                stampCountry:(this.props.stamp != null) ? this.props.stamp.country:"",
-                stampImageUrl:(this.props.stamp != null) ? this.props.stamp.imageUrl:""
+                stampYearPublished:(this.props.stamp != null) ? this.props.stamp.yearPublished : "",
+                stampCountry:(this.props.stamp != null) ? this.props.stamp.country : "",
+                stampImageUrl:(this.props.stamp != null) ? this.props.stamp.imageUrl : ""
         }
         this.nameChanged = this.handleChange.bind(this, 'stampName');
         this.priceChanged = this.handleChange.bind(this, 'stampPrice');
@@ -30,7 +30,7 @@ export default class EditStampForm extends Component {
     }
     
     handleSubmit = (event) => {  
-        this.setState({stamp: this.props.stamp})
+        
         event.preventDefault();
         event.stopPropagation();
         this.CheckImage(this.state.stampImageUrl,this.HandleStampAdding)
@@ -88,6 +88,9 @@ export default class EditStampForm extends Component {
         else{
            return <StampContainerImage imagePath={this.state.stampImageUrl}/>
         }
+    }
+    UpdateThisState = (e) => {
+        
     }
     
     render() {
@@ -160,7 +163,7 @@ export default class EditStampForm extends Component {
 
                                 </div> 
                             </div>
-                        <button type="submit" className="myButton">Save</button>
+                        <button type="submit" className="myButton" onClick={this.UpdateThisState}>Save</button>
                         </form>
                     </div>
                 </div>
