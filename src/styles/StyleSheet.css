@@ -1,0 +1,105 @@
+body{
+    background-color: #282c34;
+    color: azure;
+}
+.Links {
+    text-align: center;
+    
+}
+.RouterLink {
+    color: #FFF
+}
+
+.RouterLink:hover {
+    color: red;
+    text-decoration: none;   
+}
+
+.StampHeader:hover {
+    color: red;   
+}
+
+.HeaderCol{
+    height: inherit;
+    margin-left: 3px;
+    margin-right: 3px;
+
+}
+
+.StampContainerHeader{
+    font-size: larger;
+    margin-bottom: 6px;
+    text-align: left;
+    color:whitesmoke;
+    height: 20px;    
+    align-items: center;
+    margin-left: 3px;
+}   
+
+.HeaderCol{
+    height: inherit;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+
+
+.HeaderCol img{  
+    max-height:100%;
+    background-color: khaki;
+}
+.StampContainerImage{
+    background-color:var(--main-bg-color);
+    padding: 3px;
+    height: auto; 
+}
+
+.StampContainerImage img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.StampContainer{
+    margin: 3px;
+    background-color: #282c34;
+    border: white;
+    border-width: 5px;
+    border-style:solid;
+    border-radius: 25px ;
+    padding-bottom: 5px;
+}
+
+.StampContainerData{
+    text-align: left;
+}
+
+.StampDataRow{
+    background-color: coral;
+    text-align: left;
+    padding: 2px;
+    margin: 0px 2px 4px 2px;
+    border-style: solid;
+    border-width: 2px 0px 2px 0px;
+    border-color: black; 
+}
+
+.myButton {
+	background-color:#282c34;
+	border-radius:6px;
+	border:1px solid yellow;
+	cursor:pointer;
+	color:#fff;
+	padding:6px 24px;
+    text-decoration:none;
+    text-align: center;
+}
+.myButton:hover {
+    color: red;
+	background-color: yellow;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+        
