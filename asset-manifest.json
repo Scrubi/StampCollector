@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/StampCollector/static/css/main.733ebcf0.chunk.css",
-    "main.js": "/StampCollector/static/js/main.61951718.chunk.js",
-    "main.js.map": "/StampCollector/static/js/main.61951718.chunk.js.map",
+    "main.js": "/StampCollector/static/js/main.d2a339a2.chunk.js",
+    "main.js.map": "/StampCollector/static/js/main.d2a339a2.chunk.js.map",
     "runtime-main.js": "/StampCollector/static/js/runtime-main.bd513916.js",
     "runtime-main.js.map": "/StampCollector/static/js/runtime-main.bd513916.js.map",
     "static/js/2.8d283960.chunk.js": "/StampCollector/static/js/2.8d283960.chunk.js",
     "static/js/2.8d283960.chunk.js.map": "/StampCollector/static/js/2.8d283960.chunk.js.map",
     "index.html": "/StampCollector/index.html",
-    "precache-manifest.81fb90b1372431923b996bc33334aa21.js": "/StampCollector/precache-manifest.81fb90b1372431923b996bc33334aa21.js",
+    "precache-manifest.b7191cce17dbc6e6b290ac6b5fb0de4e.js": "/StampCollector/precache-manifest.b7191cce17dbc6e6b290ac6b5fb0de4e.js",
     "service-worker.js": "/StampCollector/service-worker.js",
     "static/css/main.733ebcf0.chunk.css.map": "/StampCollector/static/css/main.733ebcf0.chunk.css.map",
     "static/js/2.8d283960.chunk.js.LICENSE.txt": "/StampCollector/static/js/2.8d283960.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.bd513916.js",
     "static/js/2.8d283960.chunk.js",
     "static/css/main.733ebcf0.chunk.css",
-    "static/js/main.61951718.chunk.js"
+    "static/js/main.d2a339a2.chunk.js"
   ]
 }
