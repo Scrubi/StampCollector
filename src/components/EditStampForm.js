@@ -30,6 +30,7 @@ export default class EditStampForm extends Component {
     }
     
     handleSubmit = (event) => {  
+        this.setState({stamp: this.props.stamp})
         event.preventDefault();
         event.stopPropagation();
         this.CheckImage(this.state.stampImageUrl,this.HandleStampAdding)
