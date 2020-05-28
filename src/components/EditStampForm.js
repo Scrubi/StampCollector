@@ -18,46 +18,19 @@ export default class EditStampForm extends Component {
                 stampCountry:(this.props.stamp != null) ? this.props.stamp.country:"",
                 stampImageUrl:(this.props.stamp != null) ? this.props.stamp.imageUrl:""
         }
+        this.nameChanged = this.handleChange.bind(this, 'stampName');
+        this.priceChanged = this.handleChange.bind(this, 'stampPrice');
+        this.yearPublishedChanged = this.handleChange.bind(this, 'stampYearPublished');
+        this.countryChanged = this.handleChange.bind(this, 'stampCountry');
+        this.imageUrlChanged = this.handleChange.bind(this, 'stampImageUrl');
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
-
-    nameChanged = (event) =>{
-        this.setState({
-            stampName:event.target.value
-        })
-    }
-
-    priceChanged = (event) =>{
-        this.setState({
-            stampPrice:event.target.value
-        })
-    }
-
-    countryChanged = (event) =>{
-        this.setState({
-            stampCountry:event.target.value
-        })
-    }
-    
-    yearPublishedChanged = (event) =>{
-        this.setState({
-            stampYearPublished:event.target.value
-        })
-    }
-
-    isStampedChanged = (event) =>{
-        this.setState({
-            stampIsStamped:event.target.value
-        })
-    }
-    
-    imageUrlChanged = (event) =>{
-       
-        this.setState({
-            stampImageUrl:event.target.value
-        })
+    handleChange(keyName, e) {
+        this.setState({ [keyName]: e.target.value });
     }
     
     handleSubmit = (event) => {
+        
         event.preventDefault();
         event.stopPropagation();
         this.CheckImage(this.state.stampImageUrl,this.HandleStampAdding)
@@ -94,7 +67,7 @@ export default class EditStampForm extends Component {
         let yearPublished = this.state.stampYearPublished
         let country = this.state.stampCountry
         if(this.state.stampCountry === ""){
-            alert("You have to give coutry!")
+            alert("You have to give country!")
             return;
         }
         let isStamped = this.state.stampIsStamped
