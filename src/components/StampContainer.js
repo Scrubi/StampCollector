@@ -20,7 +20,6 @@ export default class StampContainer extends Component {
     }
 
     render() {
-       
         return (
             <div className="col StampContainer" onClick={this.headerClicked}>
                 <div className="row StampContainerHeader">

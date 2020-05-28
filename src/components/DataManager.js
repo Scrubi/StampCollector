@@ -39,7 +39,7 @@ var initDataManager = () => {
 var addStampToCollection = (stamp) =>{
     console.log("Trying to add stamp to the collection")
     if(stamp.id === null){
-        //has no id, is new stamp
+       
         stamp.id = stampCollection.length +1;
         if(stamp.StampToConsole != null) {
             stamp.StampToConsole();
@@ -48,14 +48,14 @@ var addStampToCollection = (stamp) =>{
     }
     else{
         stamp.StampToAlert();
-        //use splice
+        
         let index = stampCollection.findIndex( x => x.id === stamp.id)
         if(index !== null){
             
            stampCollection[index] = stamp
         }
         else{
-            console.log("Something went wrong when updating the stamp.")
+            alert("Something went wrong when updating the stamp.")
         }
     }
 
